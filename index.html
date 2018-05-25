@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <title>Hello Front-End</title>
 </head>
 <body>
-  <h1>Hello Front-End</h1>
+	<h1>Temperature Converter</h1>
+
+	<form id="temp-form">
+
+		<input id="input" type="text" name="input"  />
+		<select id="scale-select" name="scale-select">
+			<option value="farToCel">Farenheight to Celsius</option>
+			<option value="farToKel">Farenheight to Kelvin</option>
+			<option value="celToFar">Celsius to Farenheight</option>
+			<option value="celToKel">Celsius to Kelvin</option>
+			<option value="kelToFar">Kelvin to Farenheight</option>
+			<option value="kelToCel">Kelvin to Celsius</option>
+		</select>
+		<input id="submit" type="submit" />
+		<button id="clear" type="button">Clear</button>
+
+	</form>
+
+	<div id="result">
+
+		<p>0&deg;</p>
+
+	</div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
